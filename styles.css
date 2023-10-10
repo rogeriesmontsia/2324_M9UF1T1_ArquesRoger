@@ -1,0 +1,181 @@
+header {
+  margin: auto;
+  min-width: 25%;
+  width: max-content;
+  height: max-content;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #ffffff, #2e4bcc);
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+}
+
+html {
+  background: linear-gradient(to bottom, #3498db, #2ecc71);
+  text-align: center;
+  margin: auto;
+
+  background-attachment: fixed;
+}
+
+body {
+  display: grid;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.caixaResultat {
+  margin: auto;
+  min-width: 25%;
+  width: max-content;
+  height: max-content;
+  padding: 0.3px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.caixaAlerta {
+  margin: auto;
+  text-align: center;
+  width: max-content;
+  background-color: red;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.formulariInputs {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+input[type=text] {
+  width: 100%;
+  border: 2px solid #2e4bcc;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+input[type=text]:focus {
+  border-color: green;
+  box-shadow: 0 0 8px 0 rgb(30, 255, 0);
+}
+
+input[type="radio"] {
+  /* Custom sizing and appearance */
+  width: 15px;
+  height: 15px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Center horizontally */
+}
+
+.radio-option label {
+  margin-left: 10px;
+  /* Adjust the margin to position the text */
+}
+
+
+
+button {
+  cursor: pointer;
+}
+
+.botoEliminar {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.botoEliminar:hover {
+  background-color: transparent;
+}
+
+.botoCalcular {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgb(98, 98, 255);
+  color: black;
+  border: 2px solid blue;
+}
+
+.botoCalcular:hover {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #215723;
+}
+
+.w3-card,
+.w3-card-2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.historial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  header {
+    width: 75%;
+  }
+
+  hr {
+    width: 40%;
+  }
+
+  .caixaResultat {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  hr {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .caixaResultat {
+    width: 100%;
+  }
+
+  input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+}
